@@ -1,6 +1,7 @@
 clear
 
-set datapath=C:\Users\paula\Desktop\OPENDSS_OCHOA_CLASS\MATLAB_APPLICATION\
+! set datapath=C:\Users\paula\Desktop\OPENDSS_OCHOA_CLASS\MATLAB_APPLICATION\
+set datapath=C:\Users\apaul314\Desktop\POWER_FLOW_SOLVING_BF_SWEEP\
 // -----------------------------------------------------------------------//
 // Circuit
 // -----------------------------------------------------------------------//
