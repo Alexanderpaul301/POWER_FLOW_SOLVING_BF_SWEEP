@@ -1,0 +1,10 @@
+
+SYMMETRICAL COMPONENT CURRENTS BY CIRCUIT ELEMENT (first 3 phases)
+
+Element          Term      I1         I2         %I2/I1    I0         %I0/I1   %Normal %Emergency
+
+"VSOURCE.SOURCE"   1     0.97607   4.4325E-010     0.00  1.5158E-012     0.00      0.00     0.00
+   -               2     0.97607   4.4325E-010     0.00  1.5158E-012     0.00      0.00     0.00
+"TRANSFORMER.T1"   1     0.97607   4.4217E-010     0.00  1.3336E-014     0.00      3.53     2.59
+   -               2      26.982   1.2222E-008     0.00  1.7542E-009     0.00      0.00     0.00
+"LOAD.L1" ......   1      26.982   1.222E-008     0.00  1.7552E-009     0.00      0.00     0.00

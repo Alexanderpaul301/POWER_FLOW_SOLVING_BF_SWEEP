@@ -1,0 +1,29 @@
+
+CIRCUIT ELEMENT CURRENTS
+
+(Currents into element from indicated bus)
+
+Power Delivery Elements
+
+  Bus Phase    Magnitude, A     Angle      (Real)   +j  (Imag)
+
+ELEMENT = "Vsource.SOURCE"
+200      1           4.0595 /_  153.6 =    -3.6365 +j    1.8043
+------------
+200      0           4.0595 /_  -26.4 =     3.6365 +j   -1.8043
+
+ELEMENT = "Line.SOURCETOLOAD"
+200      1           4.0595 /_  -26.4 =     3.6365 +j   -1.8043
+------------
+300      1           4.0658 /_  153.4 =    -3.6365 +j    1.8184
+
+= = = = = = = = = = = = = = = = = = =  = = = = = = = = = = =  = =
+
+Power Conversion Elements
+
+  Bus Phase    Magnitude, A     Angle      (Real)   +j  (Imag)
+
+ELEMENT = "Load.MONOPHASICLOAD"
+300      1           4.0658 /_  -26.6 =     3.6365 +j   -1.8184
+300      0           4.0658 /_  153.4 =    -3.6365 +j    1.8184
+

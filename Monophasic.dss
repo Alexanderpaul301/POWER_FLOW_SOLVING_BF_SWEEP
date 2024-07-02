@@ -1,0 +1,21 @@
+Clear
+set datapath=C:\Users\paula\Desktop\OPENDSS_OCHOA_CLASS\MATLAB_APPLICATION\
+New Circuit.MonophasicCircuit basekv=11 pu=1.0 phases=1 bus1=200
+
+
+! Création de la source de tension monophasée
+!New Vsource.I bus1=100 bus2=200 phases=1 basekv=11 pu=1.0 angle=0 frequency=60
+
+! Création de la ligne reliant la source à la charge
+New Line.SourceToLoad bus1=200 bus2=300 phases=1 length=1.0 units=km
+
+
+! Ajout d'une charge monophasée
+New Load.MonophasicLoad bus1=300 phases=1 model=1 kV=11 kW=40 kvar=20
+
+set voltagebases=[19,052558]
+calc voltagebases
+! Résolution du flux de puissance
+Solve
+export Y 
+export Yprim

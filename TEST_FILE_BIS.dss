@@ -1,0 +1,22 @@
+clear
+
+set datapath=C:\Users\paula\Desktop\OPENDSS_OCHOA_CLASS\MATLAB_APPLICATION\
+// -----------------------------------------------------------------------//
+// Circuit
+// -----------------------------------------------------------------------//
+
+New Circuit.TEST_N basekv=11 bus1=100 phases=3 pu=1.0 angle=0 frequency=60
+
+
+new linecode.ABC nphases=3 R1=2.13444 X1=1.554003 units=km
+new line.lineA-B bus1=100 bus2=200 length=1 phases=3 units=km linecode=ABC
+
+
+New Load.L1 phases=3 bus1=200 kv=11 kw=160 kvar=110 model=1
+
+
+set voltagebases=[11]
+calc voltagebases
+
+solve
+
